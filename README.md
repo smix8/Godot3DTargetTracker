@@ -14,15 +14,11 @@
 - Ruby colors!
 
 ## Setup | Usage
-The example project comes with a minimalistic `Demo_Scene` that shows the intended Node setup
-In the folder directory `src/3d_helpers` you find a `3d_Target_Tracker.tscn` scene file.
-Add this `3d_Target_Tracker` scene as a Child to any 3d `Node` you want to track ( must have a 3d transform / inherit from `Spatial` )
+The example project comes with a minimalistic `Demo_Scene` that shows the intended Node setup. In the folder directory `src/3d_helpers` you find a `3d_Target_Tracker.tscn` scene file. Add this `3d_Target_Tracker` scene as a Child to any 3d `Node` you want to track ( must have a 3d transform / inherit from `Spatial` )
 
-For the direction arrow to work correctly move the `3d_Target_Tracker` node to a position heighter than the target node e.g. so the arrow can point to the head instead on the toe at the ground on a large monster close to the screen border. When target is on screen the direction arrow will automatically switch to aim down at the targets ground position to avoid pointing in the wrong direction when the 2d positions overlap.
+To make the direction arrow work correctly move the `3d_Target_Tracker` node in 3d view to a position higher than the target node. Otherwise the arrow will point at the toe on the ground on a large monster instead of its head when it is close to the screen border. When the target is on screen the direction arrow will automatically switch to aim down at the targets ground position to avoid pointing in the wrong direction when the 2d positions overlap.
 
-Use the nodes export variables in the inspector to adjust settings like used display mode and image for this target
-Use the bool `is_tracked` variable to toggle the display on and off from code
-e.g. start the tracking only when an enemy gets aggressive towards the player
+Use the nodes export variables in the inspector to adjust settings. Use the bool `is_tracked` variable to toggle the display on and off from code. e.g. to start the tracking only when an enemy turns aggressive towards the player
 
 ## License
 MIT
