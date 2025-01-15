@@ -2,6 +2,8 @@
 # Godot 3D Target Tracker and Direction Indicator
 3D Target Tracker and Direction Indicator for Godot 3.2
 
+No longer developed so archived.
+
 ![off_screen_indi](https://user-images.githubusercontent.com/52464204/73356491-c70aec00-429a-11ea-97cd-5ab27ac89fdd.gif)
 
 ## Features | Examples:
@@ -22,6 +24,7 @@ Use the nodes export variables in the inspector to adjust settings. Use the bool
 
 ## License
 MIT
+
 ## Known Issues
 Script works without setting a bounding box for the parent model by using the center origin ( 0, 0 ) to decide if it is considered on screen or not which works fine for most 3d models.
 
